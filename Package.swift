@@ -18,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/SDWebImage.git", from: "5.10.0"),
-        .package(url: "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/libwebp-Xcode.git", from: "1.1.0")
+        .package(url: "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/libwebp-Xcode.git", branch: "master")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
