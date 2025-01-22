@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/SDWebImage.git", from: "5.10.0"),
+        .package(url: "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/SDWebImage.git", branch: "master"),
         .package(url: "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/libwebp-Xcode.git", branch: "master")
     ],
     targets: [
@@ -25,7 +25,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "SDWebImageWebPCoder",
-            dependencies: ["SDWebImage", "libwebp"],
+            dependencies: [
+                "SDWebImage",
+                .product(name: "libwebp", package: "libwebp-Xcode")
+            ],
             path: ".",
             sources: ["SDWebImageWebPCoder/Classes"],
             publicHeadersPath: "SDWebImageWebPCoder/Classes",
