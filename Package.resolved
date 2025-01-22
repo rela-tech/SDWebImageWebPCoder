@@ -1,25 +1,24 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "libwebp",
-        "repositoryURL": "https://github.com/SDWebImage/libwebp-Xcode.git",
-        "state": {
-          "branch": null,
-          "revision": "86c1b5d567ed548da861486b54e1f8f068a3cef7",
-          "version": "1.1.0"
-        }
-      },
-      {
-        "package": "SDWebImage",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
-        "state": {
-          "branch": null,
-          "revision": "59730af512c06fb569c119d737df4c1c499e001d",
-          "version": "5.18.10"
-        }
+  "originHash" : "19fa211efa807f057c2d499367c5ad09d558a2f51c654d5806d89e0b78fbd054",
+  "pins" : [
+    {
+      "identity" : "libwebp-xcode",
+      "kind" : "remoteSourceControl",
+      "location" : "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/libwebp-Xcode.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8e04c9cee31f85e8b4b85a8ad5904621743bd8df"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "git@codeup.aliyun.com:6333b695257dab51ddaa62e9/mirrors/SDWebImage.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d5732787b785bc2165eaac141645574ae7b7fcb8"
+      }
+    }
+  ],
+  "version" : 3
 }
